@@ -67,7 +67,7 @@ The [skewness][skewness] for a [normal][normal-distribution] random variable wit
 ## Usage
 
 ```javascript
-import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@esm/index.mjs';
+import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@v0.2.1-esm/index.mjs';
 ```
 
 #### skewness( mu, sigma )
@@ -129,7 +129,7 @@ y = skewness( 0.0, -1.0 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@esm/index.mjs';
+import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@v0.2.1-esm/index.mjs';
 
 var sigma;
 var mu;
