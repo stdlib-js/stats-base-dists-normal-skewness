@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-02)
+## Unreleased (2025-05-06)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`8c463ff`](https://github.com/stdlib-js/stdlib/commit/8c463ff85300e86d6a782511d1defea793994da5) - **style:** fix indentation in C files _(by Philipp Burckhardt)_
 -   [`20475c3`](https://github.com/stdlib-js/stdlib/commit/20475c38174bae305bff48d6b4033874a1df7a4c) - **chore:** clean-up _(by Athan Reines)_
 -   [`1775485`](https://github.com/stdlib-js/stdlib/commit/1775485d32eaa084832a9f93b127a61a0e71def9) - **feat:** add C implementation for `stats/base/dists/normal/skewness` [(#4001)](https://github.com/stdlib-js/stdlib/pull/4001) _(by Manvith M, Philipp Burckhardt, stdlib-bot)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
