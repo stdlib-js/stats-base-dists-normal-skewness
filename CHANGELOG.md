@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2025-12-20)
 
 <section class="features">
 
@@ -34,6 +34,9 @@ This release closes the following issue:
 
 <details>
 
+-   [`6fe0761`](https://github.com/stdlib-js/stdlib/commit/6fe0761c9b399fae0e81992d5dda665cebaee019) - **docs:** replace manual `for` loop in examples [(#9055)](https://github.com/stdlib-js/stdlib/pull/9055) _(by Harsh Yadav)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
 -   [`8c463ff`](https://github.com/stdlib-js/stdlib/commit/8c463ff85300e86d6a782511d1defea793994da5) - **style:** fix indentation in C files _(by Philipp Burckhardt)_
 -   [`20475c3`](https://github.com/stdlib-js/stdlib/commit/20475c38174bae305bff48d6b4033874a1df7a4c) - **chore:** clean-up _(by Athan Reines)_
 -   [`1775485`](https://github.com/stdlib-js/stdlib/commit/1775485d32eaa084832a9f93b127a61a0e71def9) - **feat:** add C implementation for `stats/base/dists/normal/skewness` [(#4001)](https://github.com/stdlib-js/stdlib/pull/4001) _(by Manvith M, Philipp Burckhardt, stdlib-bot)_
@@ -49,9 +52,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Harsh Yadav
 -   Manvith M
 -   Philipp Burckhardt
 
