@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-05-14)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`3220a54`](https://github.com/stdlib-js/stdlib/commit/3220a542b8dff991c11047065b68123ece76ab1b) - **chore:** propagate `ndarray/*` and `normal/*` fixes [(#12117)](https://github.com/stdlib-js/stdlib/pull/12117) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.1">
 
 ## 0.3.1 (2026-02-05)
