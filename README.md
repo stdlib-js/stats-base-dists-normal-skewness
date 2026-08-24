@@ -48,7 +48,7 @@ The [skewness][skewness] for a [normal][normal-distribution] random variable wit
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:normal_skewness">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/skewness/docs/img/equation_normal_skewness.svg" alt="Skewness for a normal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0b6a176fdab165a791a284bc2b08c69a95eb62f2/lib/node_modules/@stdlib/stats/base/dists/normal/skewness/docs/img/equation_normal_skewness.svg" alt="Skewness for a normal distribution.">
     <br>
 </div> -->
 
@@ -60,14 +60,32 @@ The [skewness][skewness] for a [normal][normal-distribution] random variable wit
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-normal-skewness
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@deno/mod.js';
+var skewness = require( '@stdlib/stats-base-dists-normal-skewness' );
 ```
 
 #### skewness( mu, sigma )
@@ -123,9 +141,9 @@ y = skewness( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-skewness@deno/mod.js';
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var skewness = require( '@stdlib/stats-base-dists-normal-skewness' );
 
 var opts = {
     'dtype': 'float64'
@@ -133,7 +151,7 @@ var opts = {
 var sigma = uniform( 10, 0.0, 20.0, opts );
 var mu = uniform( 10, -5.0, 5.0, opts );
 
-logEachMap( 'µ: %0.4f, σ: %0.4f, skew(X;µ,σ): %0.4f', mu, sigma, skewness );
+logEachMap( 'μ: %0.4f, σ: %0.4f, skew(X;μ,σ): %0.4f', mu, sigma, skewness );
 ```
 
 </section>
@@ -142,7 +160,98 @@ logEachMap( 'µ: %0.4f, σ: %0.4f, skew(X;µ,σ): %0.4f', mu, sigma, skewness );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/normal/skewness.h"
+```
+
+#### stdlib_base_dists_normal_skewness( mu, sigma )
+
+Returns the skewness for a normal distribution with mean `mu` and standard deviation `sigma`.
+
+```c
+double out = stdlib_base_dists_normal_skewness( 0.0, 1.0 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` mean.
+-   **sigma**: `[in] double` standard deviation.
+
+```c
+double stdlib_base_dists_normal_skewness( const double mu, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/normal/skewness.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double sigma;
+    double mu;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        sigma = random_uniform( 0.1, 20.0 );
+        y = stdlib_base_dists_normal_skewness( mu, sigma );
+        printf( "μ: %.4f, σ: %.4f, skew(X;μ,σ): %.4f\n", mu, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -161,7 +270,7 @@ logEachMap( 'µ: %0.4f, σ: %0.4f, skew(X;µ,σ): %0.4f', mu, sigma, skewness );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
